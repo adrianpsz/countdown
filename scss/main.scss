@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap');
+
+@function tint($color, $percentage) {
+  @return mix(white, $color, $percentage);
+}
+
+@function shade($color, $percentage) {
+  @return mix(black, $color, $percentage);
+}
+
+$color1: #F0EAD2;
+$color2: #DDE5B6;
+$color3: #ADC178;
+$color4: #A98467;
+$color5: #6C584C;
+
+$red: #8c2b2b;
+
+.countdown {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: bold;
+  background: $color1;
+  padding: 1rem;
+  border-radius: 0.3rem;
+
+  .countdown__item {
+    text-align: center;
+
+    .item__content {
+      position: relative;
+      background: url('graphics/countdown.png');
+      background-size: 100% 100%;
+      background-repeat: no-repeat;
+      background-position: center center;
+      padding: 0.5rem 2rem;
+      margin: 0;
+      color: white;
+      font-size: 280%;
+      border-radius: 0.5rem;
+
+      .countdown__line {
+        background-size: cover;
+        position: absolute;
+        top: 42%;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        z-index: 9999;
+      }
+    }
+
+    .item__value {
+      color: #DDE5B6;
+    }
+
+    .item__label {
+      font-weight: bold;
+      padding: 0.3rem 1rem;
+      color: $color5;
+    }
+  }
+
+  .end-date-row {
+    .end-date-row__header {
+      position: relative;
+
+      .end-date-row__value {
+        font-weight: bold;
+        color: $color5;
+      }
+
+      .end-date-row__delete {
+        opacity: 0.2;
+        position: absolute;
+        z-index: 9999;
+        top: 0;
+        right: 0;
+        background: white;
+        border-radius: 50%;
+        border: 2px solid $red;
+        padding: 0 0.4rem;
+        text-align: center;
+        cursor: pointer;
+        color: shade($red, 70%);
+
+        &:hover {
+          opacity: 1;
+          background: tint($red, 90%);
+        }
+      }
+    }
+  }
+
+  .form {
+    input {
+      border-color: $color4;
+      border-radius: 0.3rem 0 0 0.3rem;
+    }
+
+    button {
+      border-radius: 0 0.3rem 0.3rem 0;
+      border-color: $color5;
+      background: $color5;
+      color: $color2;
+    }
+  }
+}
+
+#add-new-countdown {
+  color: $color3;
+  border: 1px solid $color3;
+}

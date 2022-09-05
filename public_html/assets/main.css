@@ -1,0 +1,82 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap");
+.countdown {
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: bold;
+  background: #F0EAD2;
+  padding: 1rem;
+  border-radius: 0.3rem;
+}
+.countdown .countdown__item {
+  text-align: center;
+}
+.countdown .countdown__item .item__content {
+  position: relative;
+  background: url("graphics/countdown.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  padding: 0.5rem 2rem;
+  margin: 0;
+  color: white;
+  font-size: 280%;
+  border-radius: 0.5rem;
+}
+.countdown .countdown__item .item__content .countdown__line {
+  background-size: cover;
+  position: absolute;
+  top: 42%;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  z-index: 9999;
+}
+.countdown .countdown__item .item__value {
+  color: #DDE5B6;
+}
+.countdown .countdown__item .item__label {
+  font-weight: bold;
+  padding: 0.3rem 1rem;
+  color: #6C584C;
+}
+.countdown .end-date-row .end-date-row__header {
+  position: relative;
+}
+.countdown .end-date-row .end-date-row__header .end-date-row__value {
+  font-weight: bold;
+  color: #6C584C;
+}
+.countdown .end-date-row .end-date-row__header .end-date-row__delete {
+  opacity: 0.2;
+  position: absolute;
+  z-index: 9999;
+  top: 0;
+  right: 0;
+  background: white;
+  border-radius: 50%;
+  border: 2px solid #8c2b2b;
+  padding: 0 0.4rem;
+  text-align: center;
+  cursor: pointer;
+  color: #2a0d0d;
+}
+.countdown .end-date-row .end-date-row__header .end-date-row__delete:hover {
+  opacity: 1;
+  background: #f4eaea;
+}
+.countdown .form input {
+  border-color: #A98467;
+  border-radius: 0.3rem 0 0 0.3rem;
+}
+.countdown .form button {
+  border-radius: 0 0.3rem 0.3rem 0;
+  border-color: #6C584C;
+  background: #6C584C;
+  color: #DDE5B6;
+}
+
+#add-new-countdown {
+  color: #ADC178;
+  border: 1px solid #ADC178;
+}
+
+/*# sourceMappingURL=main.css.map */
