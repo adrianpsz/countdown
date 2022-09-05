@@ -1,1 +1,1 @@
-sass ./main.scss ./../../assets/main.css
+sass ./main.scss ./../public_html/assets/main.css
